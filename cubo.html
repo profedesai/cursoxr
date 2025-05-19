@@ -4,16 +4,42 @@
   </head>
   <body>
     <a-scene xr-mode-ui="XRMode: xr">
-      <!-- pared izda -->
-      <a-box position="-1 1 1" height="2" width="0.1" depth="2" color="blue"></a-box>
-      <!-- pared er -->
-      <a-box position="1 1 -1" height="2" width="0.1" depth="2" color="green"></a-box>
-<!-- pared tras -->
-      <a-box position="0 1 0" height="2" width="0.1" depth="2" color="gray"></a-box>
-<!-- piso -->
-      <a-box position="0 0 -1" height="2" width="0.1" depth="2" color="red"></a-box>
-<!-- techo -->
-      <a-box position="0 2 -1" height="2" width="0.1" depth="2" color="black"></a-box>
+
+      <a-assets>
+            <img id="textura_lamas" src="textura_lamas.jpg">
+            <img id="textura_mar" src="textura_mar.jpg">
+            <img id="textura_rara" src="textura_rara.jpg">
+        </a-assets>
+
+      
+      <a-scene>
+  <!-- Textura -->
+  <a-assets>
+    <img id="textura_mar" src="ruta/a/tu/imagen.jpg">
+  </a-assets>
+
+  <!-- Piso -->
+  <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+  <!-- Frente -->
+  <a-plane position="0 1 1" rotation="0 0 0" width="2" height="2" src="#textura_mar"></a-plane>
+
+  <!-- Atrás -->
+  <a-plane position="0 1 -1" rotation="0 180 0" width="2" height="2" src="#textura_rara"></a-plane>
+
+  <!-- Izquierda -->
+  <a-plane position="-1 1 0" rotation="0 90 0" width="2" height="2" src="#textura_lamas"></a-plane>
+
+  <!-- Derecha -->
+  <a-plane position="1 1 0" rotation="0 -90 0" width="2" height="2" src="#textura_mar"></a-plane>
+
+  <!-- Arriba -->
+  <a-plane position="0 2 0" rotation="-90 0 0" width="2" height="2" src="#textura_mar"></a-plane>
+
+  <!-- Abajo (opcional, puede ser el piso) -->
+  <a-plane position="0 0 0" rotation="90 0 0" width="2" height="2" src="#textura_mar"></a-plane>
+</a-scene>
+
 
 
      
