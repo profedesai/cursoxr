@@ -29,8 +29,8 @@
 <img id="disco" src="disco.jpg">
       </a-assets>
 <!-- esto es el suelo -->
-      <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="1" height="0.6"
-          material="src: #suelo">
+      <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="2" height="2" 
+      material="src: #suelo" opacity: 0.2; color: blue" grabbable>
       </a-plane>
 <!-- esto es el fondo NO VALE DE MOMENTO
       <a-plane id="plane" position="1 0.75 -0.5" rotation="0 0 0" width="1" height="0.6"
@@ -58,7 +58,7 @@
 
       <a-entity position="0.6 0.85 -0.5"
           geometry="primitive: cone; radiusBottom: 0.15; height: 0.2;"
-          material="src: #cd opacity: 0.2" grabbable>
+          material="src: #cd"; opacity: 0.2" grabbable>
       </a-entity>
 
       <a-entity>
