@@ -33,27 +33,24 @@
  <img id="suelo" src="suelo.jpg">
  <img id="suelo2" src="floor.jpg">
        </a-assets>
-<a-sky color="00AAFF"></a-sky>
+<!-- CIELO -->
+       <a-sky color="0EAEAF"></a-sky>
 <!-- esto es el suelo -->
       <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="2" height="2" 
        opacity: 0.2; color: blue" grabbable>
       </a-plane>
-<!-- esto es el fondo NO VALE DE MOMENTO
-      <a-plane id="plane" position="1 0.75 -0.5" rotation="0 0 0" width="1" height="0.6"
-          color="gray">
-      </a-plane> -->
-      <!-- cubo CON IMAGEN DE DISKETE -->
-       <a-entity position="-0.5 0.85 -0.6"
+<!-- CUBO CON IMAGEN DE DISKETE -->
+      <a-entity position="-0.5 0.85 -0.75"
           geometry="primitive: box; depth: 0.75; height: 0.75; width: 0.75;"
         material="src: #disco0"; color: white" grabbable>
       </a-entity>
 <!-- ESFERA CON IMAGEN DE DISKETE -->
-      <a-entity position="0 0.85 0"
+      <a-entity position="0 0.85 0.3"
           geometry="primitive: sphere; radius: 0.15;"
           material="src: #disco" opacity: 0.2; color: blue" grabbable>
       </a-entity>
 <!-- cilindro CON IMAGEN DE CD -->
-      <a-entity position="0.3 0.85 -0.5"
+      <a-entity position="0.3 0.85 -0.3"
           geometry="primitive: cylinder; radius: 0.15; height: 0.5;"
           material="src: #cd" opacity: 0.2; color: green" grabbable>
       </a-entity>
