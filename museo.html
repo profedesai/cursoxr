@@ -31,20 +31,22 @@
  <img id="disco" src="disco.jpg">
  <img id="cd" src="cd.jpg">
  <img id="suelo" src="suelo.jpg">
-      </a-assets>
+ <img id="suelo2" src="floor.jpg">
+       </a-assets>
+
 <!-- esto es el suelo -->
       <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="2" height="2" 
-      material="src: #suelo" opacity: 0.2; color: blue" grabbable>
+       opacity: 0.2; color: blue" grabbable>
       </a-plane>
 <!-- esto es el fondo NO VALE DE MOMENTO
       <a-plane id="plane" position="1 0.75 -0.5" rotation="0 0 0" width="1" height="0.6"
           color="gray">
       </a-plane> -->
-      <a-entity position="0.35 0.35 0.35"
+      <a-entity position="0 0.35 -0.35"
           geometry="primitive: box; depth: 0.3; height: 0.2; width: 0.25;"
         material="src: #disco0"; color: white" grabbable>
       </a-entity>
-      <a-entity position="0.3 0.3 0.3"
+      <a-entity position="0 0.55 -0.3"
           geometry="primitive: box; depth: 0.3; height: 0.2; width: 0.25;"
           material="src: #disco" opacity: 0.2; color: red" grabbable>
       </a-entity>
