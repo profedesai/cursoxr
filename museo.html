@@ -26,20 +26,21 @@
         <a-mixin id="glass"
           geometry="primitive: box; depth: 0.3; height: 0.2; width: 0.3;"
           material="opacity: 0.2"></a-mixin>
+<img id="disco" src="disco.jpg">
       </a-assets>
-/* suelo */
+<!-- esto es el suelo -->
       <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="1" height="0.6"
           color="gray">
       </a-plane>
-/* fondo */
-      <a-plane id="plane" position="0 0.75 -0.5" rotation="0 0 0" width="1" height="0.6"
-          color="red">
+<!-- esto es el fondo -->
+      <a-plane id="plane" position="1 0.75 -0.5" rotation="0 0 0" width="1" height="0.6"
+          color="gray">
       </a-plane>
       <a-entity position="-0.5 0.85 -0.5"
           geometry="primitive: box; depth: 0.3; height: 0.2; width: 0.005;"
         material="opacity: 0.3; color: white" grabbable>
       </a-entity>
-
+<a-entity id="disco" position="0.5 0.5 0.5"></a-entity>
       <a-entity position="-0.3 0.85 -0.5"
           geometry="primitive: box; depth: 0.3; height: 0.2; width: 0.3;"
           material="opacity: 0.2; color: red" grabbable>
